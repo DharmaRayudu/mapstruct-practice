@@ -23,6 +23,6 @@ public interface EmployeeDetailsMapper {
     EmployeeViewDetailsDTO EMPLOYEE_VIEW_DETAILS_DTO(Employee employee, List<Address> address, Country country);
 
     @Mapping(source = "employee.id", target = "id")
-    @Mapping(source = "countryName", target = "")
+   // @Mapping(source = "countryName", target = "")
     EmployeeViewDetailsDTO employeeViewDetailsWithExistingMapper(Employee employee, AddressListMapper addressListMapper);
 }
